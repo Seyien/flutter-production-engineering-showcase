@@ -1,0 +1,43 @@
+name: flutter_production_engineering_showcase
+description: Sanitized dependency overview for a private production Flutter engineering case study.
+publish_to: none
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.10.0 <4.0.0"
+  flutter: ">=3.38.0"
+
+# This is not the production manifest and is not intended to build the private app.
+# It lists only selected public packages relevant to the documented architecture.
+dependencies:
+  flutter:
+    sdk: flutter
+  background_downloader: ^9.5.2
+  bloc: ^9.2.0
+  bloc_concurrency: ^0.3.0
+  cached_network_image: ^3.4.1
+  dio: ^5.9.2
+  drift: ^2.31.0
+  drift_flutter: ^0.2.8
+  equatable: ^2.0.8
+  extended_image: ^10.0.1
+  flutter_bloc: ^9.1.1
+  flutter_cache_manager: ^3.4.1
+  flutter_secure_storage: ^9.2.4
+  fpdart: ^1.2.0
+  get_it: ^8.3.0
+  go_router: ^14.8.1
+  onesignal_flutter: ^5.4.6
+  shared_preferences: ^2.5.5
+  skeletonizer: ^2.1.3
+  socket_io_client: ^3.1.4
+  web_socket_channel: ^3.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  bloc_test: ^10.0.0
+  build_runner: ^2.13.1
+  drift_dev: ^2.31.0
+  mocktail: ^1.0.4
+  very_good_analysis: ^6.0.0

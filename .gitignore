@@ -1,0 +1,51 @@
+# Editors and operating systems
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dart / Flutter generated content
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+build/
+coverage/
+
+# Secrets and private configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+google-services.json
+GoogleService-Info.plist
+firebase_options.dart
+
+# Local media and generated demo output
+demos/generated/
+demos/private/
+assets/private/
+*.mp4
+*.mov
+*.m4v
+*.avi
+*.mkv
+*.gif
+*.webp
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+tmp/
+temp/
