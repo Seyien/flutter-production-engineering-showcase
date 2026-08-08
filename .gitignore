@@ -41,6 +41,10 @@ assets/private/
 *.gif
 *.webp
 
+# Explicitly reviewed public portfolio clips
+!demos/media/
+!demos/media/*.mp4
+
 # Logs and temporary files
 *.log
 *.tmp

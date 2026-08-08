@@ -1,42 +1,29 @@
-# Demo hazırlama
+# Demo videoları
 
 [English](README.md) · [Türkçe](README.tr.md)
 
-Dört özellik odaklı kaynak video bu deponun dışında korunur. Eski birleşik kayıt artık planın parçası değildir. Kaynak dosyalar hiçbir zaman yerinde düzenlenmemelidir.
+Bu klasörde, özellik odaklı uygulama kayıtlarından oluşturulmuş dört tam MP4 portföy exportu bulunur. Eski birleşik kayıt kullanılmamıştır. Yayımlanan her dosya, onaylanmış ilgili exportun byte düzeyinde birebir kopyasıdır.
 
-## İşe alım odaklı önerilen kesitler
+## Doğrudan izle
 
-| Klip | Kaynak kayıt | Kaynak aralığı | Süre | Odak |
-| --- | --- | --- | ---: | --- |
-| Ana Sayfa / Genel Bakış | Ana sayfa | `00:00–00:45` | 45 sn | Ana sayfa kompozisyonu, duyurular ve navigasyon |
-| Öneriler / Geçmiş | Öneriler | `00:00–00:42.5` | 43 sn | Öneri akışı ve okuma geçmişi yönetimi |
-| Arama / Seri Detayı | Arama ve detay | `00:00–00:55` | 55 sn | Arama, filtreler, detay hiyerarşisi ve ana eylemler |
-| Kütüphane / Bölüm Seçimi | Arama ve detay | `01:10–01:55` | 45 sn | Bölüm seçimi, indirme eylemleri ve state geri bildirimi |
-| Okuyucu Deneyimi | Okuyucu | `00:15–01:15` | 60 sn | Okuma, kontroller ve okuyucu ayarları |
+| Demo | Süre | Çözünürlük | Doğrudan oynatma |
+| --- | ---: | ---: | --- |
+| Ana Sayfa / Genel Bakış | 45 sn | 720 × 1600 | [▶ İzle](https://github.com/Seyien/flutter-production-engineering-showcase/raw/main/demos/media/home-overview.mp4) |
+| Öneriler / Okuma Geçmişi | 43 sn | 720 × 1600 | [▶ İzle](https://github.com/Seyien/flutter-production-engineering-showcase/raw/main/demos/media/recommendations-history.mp4) |
+| Arama / Seri Detayı | 1 dk 55 sn | 480 × 1066 | [▶ İzle](https://github.com/Seyien/flutter-production-engineering-showcase/raw/main/demos/media/search-series-detail.mp4) |
+| Okuyucu Deneyimi | 3 dk 16 sn | 480 × 1066 | [▶ İzle](https://github.com/Seyien/flutter-production-engineering-showcase/raw/main/demos/media/reader-experience.mp4) |
 
-Daha uzun arama/detay kaydı ayrı bir seçim ve indirme akışı da içerdiği için dört kaynak dosyadan beş odaklı portföy klibi üretilir.
+## Yayın sınırı
 
-## Yayın kapısı
+- Kaynak kayıtlar bu deponun dışında kaldı ve değiştirilmedi.
+- Onaylanmış dört CapCut exportu kesilmeden, bulanıklaştırılmadan ve yeniden kodlanmadan yayımlandı.
+- Her dosya GitHub'ın dosya başına boyut sınırının altındadır.
+- Videolar yalnızca ürün etkileşimini gösterir; uygulama kaynak kodu, özel endpoint, credential veya veritabanı ayrıntısı açıklamaz.
 
-Ham kayıtları yayımlamayın. İncelemede üçüncü taraf kapak/sayfa görselleri ve bazı sahnelerde görünür topluluk adları/yorumları bulundu. Yalnızca aşağıdaki koşulların tamamını karşılayan yeni veya düzenlenmiş dışa aktarımları yayımlayın:
+Public topluluk kullanıcı adları/yorumları ve üçüncü taraf görsel içerikler kaydedilmiş ürün arayüzünün parçası olarak görünebilir. Bunların bu portföyde yayımlanması depo sahibi tarafından açıkça onaylanmıştır.
 
-1. Kişisel ad, avatar, yorum, bildirim, cihaz kimliği ve özel URL bulunmamalı veya geri döndürülemez biçimde redakte edilmelidir.
-2. Görünen her kapak, sayfa, ikon, font ve ses parçası lisanslı, özgün veya yayın için açıkça onaylanmış olmalıdır.
-3. Özel endpoint, operasyonel duyuru, aktivasyon akışı veya tescilli kural okunabilir olmamalıdır.
-4. Dışa aktarılan her kare normal hızda ve sahne sınırlarında incelenmelidir.
-5. Medya eklendikten sonra depo güvenlik taraması geçmelidir.
+Üçüncü taraf içerikler yalnızca kaydedilmiş uygulama arayüzünün parçası olarak görünür. İlgili tüm haklar kendi sahiplerine aittir.
 
-## Yerel klip üretimi
+## Yeniden üretim yardımcısı
 
-İnceleme yapılan bilgisayarda paketlenmiş bir FFmpeg çalıştırılabilir dosyası bulunur. Betik, `PATH` üzerindeki standart FFmpeg kurulumunu da destekler:
-
-```powershell
-.\demos\create-clips.ps1 `
-  -HomeVideo "C:\path\to\sanitized-home.mp4" `
-  -RecommendationsVideo "C:\path\to\sanitized-recommendations.mp4" `
-  -SearchDetailVideo "C:\path\to\sanitized-search-detail.mp4" `
-  -ReaderVideo "C:\path\to\sanitized-reader.mp4" `
-  -CreatePreviews
-```
-
-FFmpeg `PATH` üzerinde değilse `-FfmpegPath` kullanın. Çıktılar, her biri yayın kapısından geçene kadar Git tarafından yok sayılan `demos/generated/` klasörüne yazılır. Betik hiçbir kaynak kaydın üzerine yazmaz.
+[`create-clips.ps1`](create-clips.ps1), gelecekteki temiz kayıtların kliplerini üretmek için yerel yardımcıdır. Oluşturulan çıktı aynı gizlilik ve yayın incelemesinden geçene kadar yok sayılır.

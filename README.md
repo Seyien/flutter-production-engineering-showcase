@@ -14,17 +14,16 @@ All statements in this repository were derived from read-only inspection of the 
 
 ## Demo
 
-Four purpose-recorded feature videos were reviewed and mapped into recruiter-friendly segments. Their raw files are intentionally not published because they contain third-party content and, in some scenes, visible community data.
+Four complete MP4 demonstrations are included as exact copies of the approved portfolio exports. They can be opened directly from GitHub without an external video platform.
 
-| Area | Planned length | What it demonstrates |
+| Area | Length | Watch |
 | --- | ---: | --- |
-| Home / Overview | 45 sec | Home composition, announcements, and navigation |
-| Recommendations / History | 43 sec | Recommendation workflow and reading-history management |
-| Search / Series Detail | 55 sec | Search, filtering, detail hierarchy, and primary actions |
-| Reader Experience | 60 sec | Long-form reading controls, loading, and reader settings |
-| Library / Chapter Selection | 45 sec | Selection, download actions, and progress states |
+| Home / Overview | 45 sec | [▶ Watch MP4](https://github.com/Seyien/flutter-production-engineering-showcase/raw/main/demos/media/home-overview.mp4) |
+| Recommendations / Reading History | 43 sec | [▶ Watch MP4](https://github.com/Seyien/flutter-production-engineering-showcase/raw/main/demos/media/recommendations-history.mp4) |
+| Search / Series Detail | 1 min 55 sec | [▶ Watch MP4](https://github.com/Seyien/flutter-production-engineering-showcase/raw/main/demos/media/search-series-detail.mp4) |
+| Reader Experience | 3 min 16 sec | [▶ Watch MP4](https://github.com/Seyien/flutter-production-engineering-showcase/raw/main/demos/media/reader-experience.mp4) |
 
-See the [demo preparation guide](demos/README.md). Public media will be added only after a sanitized recording uses publishable content and contains no personal data.
+See the [demo notes](demos/README.md) for the publication and editing boundary. Each link opens the MP4 directly; no external video platform is required.
 
 ## Feature Demonstrations
 
@@ -35,7 +34,7 @@ See the [demo preparation guide](demos/README.md). Public media will be added on
 - Search, notification, community, and account-oriented navigation flows
 - Shared loading, empty, error, and retry experiences
 
-The screenshots and recordings themselves are withheld until copyright-safe sample content is available.
+The videos demonstrate product interaction and UI behavior. They do not expose application source code, backend implementation, credentials, or private configuration.
 
 ## Architecture
 
@@ -112,6 +111,6 @@ Read the evidence-based [Technical Decisions](docs/TECHNICAL_DECISIONS.md) for t
 
 ## About This Repository
 
-This public repository is a portfolio artifact based on read-only architectural analysis of a private production application. It contains documentation and safe tooling only. It does **not** contain production source code, proprietary algorithms, backend endpoints, credentials, private configuration, customer data, database details, or copyrighted product media.
+This public repository is a portfolio artifact based on read-only architectural analysis of a private production application. It contains documentation, approved demo exports, and safe tooling only. It does **not** contain production source code, proprietary algorithms, backend endpoints, credentials, private configuration, or database details. Public-facing community content may appear as part of the recorded UI with explicit owner approval. Demo content is presented solely to document application engineering and interaction design; third-party content rights remain with their respective owners.
 
 Türkçe sürüm için [README.tr.md](README.tr.md) dosyasına bakın.

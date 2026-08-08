@@ -14,17 +14,16 @@ Buradaki tüm ifadeler özel projenin salt-okunur incelenmesine dayanır. Perfor
 
 ## Demo
 
-Dört özellik odaklı kayıt incelendi ve işe alım uzmanlarının hızlı değerlendirebileceği parçalara eşlendi. Ham dosyalar; üçüncü taraf içerik ve bazı sahnelerde görünür topluluk verileri içerdiği için bilerek yayımlanmadı.
+Onaylanmış portföy exportlarının birebir kopyası olan dört tam MP4 gösterimi eklendi. Harici video platformu gerektirmeden doğrudan GitHub üzerinden açılabilirler.
 
-| Alan | Planlanan süre | Gösterdiği mühendislik alanı |
+| Alan | Süre | İzle |
 | --- | ---: | --- |
-| Ana Sayfa / Genel Bakış | 45 sn | Ana sayfa kompozisyonu, duyurular ve navigasyon |
-| Öneriler / Geçmiş | 43 sn | Öneri akışı ve okuma geçmişi yönetimi |
-| Arama / Seri Detayı | 55 sn | Arama, filtreleme, detay hiyerarşisi ve ana eylemler |
-| Okuyucu Deneyimi | 60 sn | Uzun içerik kontrolleri, yükleme ve okuyucu ayarları |
-| Kütüphane / Bölüm Seçimi | 45 sn | Seçim, indirme eylemleri ve ilerleme durumları |
+| Ana Sayfa / Genel Bakış | 45 sn | [▶ MP4 Videoyu İzle](https://github.com/Seyien/flutter-production-engineering-showcase/raw/main/demos/media/home-overview.mp4) |
+| Öneriler / Okuma Geçmişi | 43 sn | [▶ MP4 Videoyu İzle](https://github.com/Seyien/flutter-production-engineering-showcase/raw/main/demos/media/recommendations-history.mp4) |
+| Arama / Seri Detayı | 1 dk 55 sn | [▶ MP4 Videoyu İzle](https://github.com/Seyien/flutter-production-engineering-showcase/raw/main/demos/media/search-series-detail.mp4) |
+| Okuyucu Deneyimi | 3 dk 16 sn | [▶ MP4 Videoyu İzle](https://github.com/Seyien/flutter-production-engineering-showcase/raw/main/demos/media/reader-experience.mp4) |
 
-Ayrıntılar için [demo hazırlama rehberine](demos/README.tr.md) bakın. Public medya yalnızca yayımlanabilir içerik kullanan ve kişisel veri içermeyen temiz bir kayıt hazırlandığında eklenecektir.
+Ayrıntılar için [demo notlarına](demos/README.tr.md) bakın. Her bağlantı MP4 dosyasını doğrudan açar; harici video platformu gerekmez.
 
 ## Özellik Gösterimleri
 
@@ -35,7 +34,7 @@ Ayrıntılar için [demo hazırlama rehberine](demos/README.tr.md) bakın. Publi
 - Arama, bildirim, topluluk ve hesap odaklı navigasyon akışları
 - Ortak yükleme, boş, hata ve yeniden deneme deneyimleri
 
-Ekran görüntüleri ve kayıtlar, telif açısından güvenli örnek içerik sağlanana kadar yayımlanmamaktadır.
+Videolar ürün etkileşimini ve UI davranışını gösterir. Uygulama kaynak kodu, backend implementasyonu, credential veya özel konfigürasyon açığa çıkarılmaz.
 
 ## Mimari
 
@@ -112,4 +111,4 @@ Problem → karar → ödün formatındaki kanıta dayalı açıklamalar için [
 
 ## Bu Depo Hakkında
 
-Bu public depo, özel bir üretim uygulamasının salt-okunur mimari analizine dayanan portföy çalışmasıdır. Yalnızca dokümantasyon ve güvenli araçlar içerir. Üretim kaynak kodu, tescilli algoritma, backend endpoint'i, credential, özel konfigürasyon, müşteri verisi, veritabanı ayrıntısı veya telifli ürün medyası içermez.
+Bu public depo, özel bir üretim uygulamasının salt-okunur mimari analizine dayanan portföy çalışmasıdır. Dokümantasyon, onaylanmış demo çıktıları ve güvenli araçlar içerir. Üretim kaynak kodu, tescilli algoritma, backend endpoint'i, credential, özel konfigürasyon veya veritabanı ayrıntısı içermez. Public topluluk içeriği, açık sahip onayıyla kaydedilmiş arayüzün parçası olarak görünebilir. Demo içeriği yalnızca uygulama mühendisliği ve etkileşim tasarımını belgelemek amacıyla sunulur; üçüncü taraf içerik hakları ilgili sahiplerine aittir.
